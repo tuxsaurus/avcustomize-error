@@ -5,7 +5,8 @@
       "@/*": ["*"],
       "@/api/*": ["pages/api/*"],
       "@/component/*": ["components/*"],
-      "@/layout/*": ["components/layout/"]
+      "@/layout/*": ["components/layout/"],
+      "@/public/*": ["public/*"]
     }
   }
 }

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Home from "pages/home";
 import styles from "../styles/Home.module.css";
 
 //import Layout from "../components/layout";
@@ -14,6 +15,8 @@ export default function Index() {
 
       <Layout>
         <h1>Main page inside Layout!</h1>
+        {28}
+        <Home />
       </Layout>
     </div>
   );
