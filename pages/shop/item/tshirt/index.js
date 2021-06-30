@@ -78,8 +78,6 @@ export default function MediaCard() {
         <Grid container spacing={1}>
           <Grid item xs={12} sm={8}>
             <Paper className={css.paper}>
-              {"xs=6"}
-
               <Card className={css.root}>
                 <CardActionArea>
                   <Image

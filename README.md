@@ -1,4 +1,4 @@
-# avcustomize.com.br
+# https://avcustomize.com.br
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -11,6 +11,21 @@ npm run dev
 # or
 yarn dev
 ```
+
+Estamh
+sua ideia!
+
+Sua ideia
+aqui!
+
+Sua
+ideia
+aqui!
+
+Vamos fazer
+uma camisa
+com sua ideia
+estampada nela!
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

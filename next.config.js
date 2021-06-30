@@ -1,4 +1,10 @@
+const withReactSvg = require("next-react-svg");
+const path = require("path");
+
 module.exports = {
+  images: {
+    domains: ["lh3.googleusercontent.com"],
+  },
   async redirects() {
     return [
       {

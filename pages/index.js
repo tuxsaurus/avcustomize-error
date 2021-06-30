@@ -2,8 +2,23 @@ import Head from "next/head";
 import Home from "pages/home";
 import styles from "../styles/Home.module.css";
 
+import { createClient } from "@supabase/supabase-js";
 //import Layout from "../components/layout";
 import Layout from "@/component/layout";
+
+console.log(`
+▄▄▄█████▓ █    ██ ▒██   ██▒  ██████  ▄▄▄       █    ██  ██▀███   █    ██   ██████ 
+▓  ██▒ ▓▒ ██  ▓██▒▒▒ █ █ ▒░▒██    ▒ ▒████▄     ██  ▓██▒▓██ ▒ ██▒ ██  ▓██▒▒██    ▒ 
+▒ ▓██░ ▒░▓██  ▒██░░░  █   ░░ ▓██▄   ▒██  ▀█▄  ▓██  ▒██░▓██ ░▄█ ▒▓██  ▒██░░ ▓██▄   
+░ ▓██▓ ░ ▓▓█  ░██░ ░ █ █ ▒   ▒   ██▒░██▄▄▄▄██ ▓▓█  ░██░▒██▀▀█▄  ▓▓█  ░██░  ▒   ██▒
+  ▒██▒ ░ ▒▒█████▓ ▒██▒ ▒██▒▒██████▒▒ ▓█   ▓██▒▒▒█████▓ ░██▓ ▒██▒▒▒█████▓ ▒██████▒▒
+  ▒ ░░   ░▒▓▒ ▒ ▒ ▒▒ ░ ░▓ ░▒ ▒▓▒ ▒ ░ ▒▒   ▓▒█░░▒▓▒ ▒ ▒ ░ ▒▓ ░▒▓░░▒▓▒ ▒ ▒ ▒ ▒▓▒ ▒ ░
+    ░    ░░▒░ ░ ░ ░░   ░▒ ░░ ░▒  ░ ░  ▒   ▒▒ ░░░▒░ ░ ░   ░▒ ░ ▒░░░▒░ ░ ░ ░ ░▒  ░ ░
+  ░       ░░░ ░ ░  ░    ░  ░  ░  ░    ░   ▒    ░░░ ░ ░   ░░   ░  ░░░ ░ ░ ░  ░  ░  
+            ░      ░    ░        ░        ░  ░   ░        ░        ░           ░  
+                                                                                  
+Hi there hacker! If you came here we might get in touch at https://twitter.com/@tuxsaurus
+`);
 
 export default function Index() {
   return (
@@ -14,10 +29,30 @@ export default function Index() {
       </Head>
 
       <Layout>
-        <h1>Main page inside Layout!</h1>
-        {28}
         <Home />
       </Layout>
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  const supabaseUrl = "https://hqrwkwuyutygkjyvvylu.supabase.co";
+  const supabaseKey = process.env.SUPABASE_KEY;
+  const supabase = createClient(supabaseUrl, supabaseKey);
+
+  //console.log(supabase);
+  //console.log(supabaseKey);
+
+  let { data: tuxsaurus, error } = await supabase
+    .from("tuxsaurus")
+    .select("email");
+
+  console.log(tuxsaurus);
+  console.log(tuxsaurus[0].email);
+
+  return {
+    props: {
+      data: "data",
+    },
+  };
 }

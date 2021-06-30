@@ -1,6 +1,6 @@
 import Layout from "@/component/layout";
 
-export default function About({ children }) {
+export default function About() {
   return (
     <>
       <Layout>

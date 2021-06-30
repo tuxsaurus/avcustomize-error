@@ -1,0 +1,18 @@
+.footer {
+  background-color: #333;
+  color: #eee;
+}
+
+.footerRow {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerCol {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+}

@@ -17,43 +17,78 @@ function MediaCard() {
   //const classes = useStyles();
 
   return (
-    <Link href="/shop/item/tshirt">
-      <Card className={css.root}>
-        <CardActionArea>
-          <CardMedia
-            className={css.media}
-            image="/shop/item/roupas/tshirt/manga_curta/img/shadow.png"
-            title="Contemplative Reptile"
-          />
-          <Image
-            src="/shop/item/roupas/tshirt/manga_curta/img/shadow.png"
-            alt="me"
-            width="256"
-            height="256"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              R$ 20,00
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Camisa modelo tshirt masculina
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              em malha 100% algodão.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions></CardActions>
-      </Card>
-    </Link>
+    <>
+      <Link href="/shop/item/tshirt">
+        <Card className={css.root}>
+          <CardActionArea>
+            <CardMedia
+              className={css.media}
+              image="/shop/item/roupas/tshirt/manga_curta/img/shadow.png"
+              title="Contemplative Reptile"
+            />
+            <Image
+              src="/shop/item/roupas/tshirt/manga_curta/img/shadow.png"
+              alt="me"
+              width="256"
+              height="256"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                R$ 20,00
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Camisa modelo tshirt estilo masculina
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                em malha 100% algodão.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions></CardActions>
+        </Card>
+      </Link>
+
+      <Link href="/shop/item/babylook">
+        <Card className={css.root}>
+          <CardActionArea>
+            <CardMedia
+              className={css.media}
+              image="/shop/item/roupas/tshirt/manga_curta/img/shadow.png"
+              title="Contemplative Reptile"
+            />
+            <Image
+              src="/shop/item/roupas/tshirt/babylook/img/shadow.png"
+              alt="me"
+              width="256"
+              height="256"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                R$ 20,00
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Camisa modelo tshirt estilo babylook
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                em malha 100% algodão.
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions></CardActions>
+        </Card>
+      </Link>
+    </>
   );
 }
 
 export default function Home({ children }) {
   return (
     <>
-      <h1>Home</h1>
-      <MediaCard />
+      <div className={css.home}>
+        <div className={css.homex}>
+          <MediaCard />
+        </div>
+      </div>
     </>
   );
 }

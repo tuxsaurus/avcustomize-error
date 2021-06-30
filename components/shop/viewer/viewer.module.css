@@ -1,0 +1,27 @@
+.viewer {
+  //background-color: red !important;
+  padding-top: 13px;
+}
+
+.productImg {
+  width: 95%;
+  max-width: 512px;
+}
+
+.description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: left;
+}
+
+.description p {
+  text-align: left;
+}
+
+.options {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}

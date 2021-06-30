@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 1111",
+    "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start"
   },
@@ -18,6 +18,7 @@
     "next": "10.x",
     "next-auth": "^3.27.0",
     "next-images": "^1.8.1",
+    "next-react-svg": "^1.1.3",
     "react": "17.x",
     "react-dom": "17.x",
     "react-swipeable-views": "^0.14.0",
