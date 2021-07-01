@@ -35,6 +35,8 @@ export default function Index() {
   );
 }
 
+// https://hqrwkwuyutygkjyvvylu.supabase.co
+
 export async function getServerSideProps() {
   const supabaseUrl = "https://hqrwkwuyutygkjyvvylu.supabase.co";
   const supabaseKey = process.env.SUPABASE_KEY;
@@ -52,7 +54,7 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      data: "data",
+      data: tuxsaurus,
     },
   };
 }
