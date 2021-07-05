@@ -11,8 +11,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-import Layout from "@/component/layout";
-import Viewer from "@/component/shop/viewer";
+import Layout from "@/components/layout";
+import Viewer from "@/components/shop/viewer";
 
 //import css from "./babylook.module.scss";
 

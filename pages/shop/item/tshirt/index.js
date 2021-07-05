@@ -23,7 +23,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
-import Layout from "@/component/layout";
+import Layout from "@/components/layout";
 
 import css from "./tshirt.module.scss";
 

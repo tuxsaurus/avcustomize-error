@@ -2,7 +2,7 @@ import { signIn, signOut, useSession } from "next-auth/client";
 //import { useRouter } from "next/router";
 
 import Image from "next/image";
-import Layout from "@/component/layout";
+import Layout from "@/components/layout";
 
 import Button from "@material-ui/core/Button";
 

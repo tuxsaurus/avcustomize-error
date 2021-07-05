@@ -1,10 +1,10 @@
 import Layout from "@/components/layout";
 
-export default function Admin({ children }) {
+export default function Vinicius({ children }) {
   return (
     <>
       <Layout>
-        <h1>Admin</h1>
+        <h1>Vinicius</h1>
       </Layout>
     </>
   );

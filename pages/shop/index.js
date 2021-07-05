@@ -1,4 +1,4 @@
-import Layout from "@/component/layout";
+import Layout from "@/components/layout";
 
 export default function About({ children }) {
   console.log({ children });
